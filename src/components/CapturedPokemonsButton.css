@@ -1,0 +1,19 @@
+.capturedPokemonsButton {
+    background:var(--pokemon-red);
+    font-size:36px;
+    line-height: 43px;
+    font-weight:600;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px 0px 0px;
+    border-radius: 100px;
+    border-color: transparent;
+    height:72px;
+    margin-right:36px;
+}
+.capturedPokemonsButton img {
+    margin-right:5px;
+}
