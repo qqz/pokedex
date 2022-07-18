@@ -1,3 +1,6 @@
+body{
+  background:var(--background);
+}
 .appHeader {
   display:flex;
   align-items: center;

@@ -1,3 +1,25 @@
 :root {
-    --pokemon-red: #EB5435;
+    --rock: #BBAA66;
+    --ghost:#6666BA;
+    --steel:#AAAABB;
+    --water:#3399FE;
+    --grass:#76CC55;
+    --psychic:#FF5599;
+    --ice:#65CCFF;
+    --dark:#775444;
+    --fairy:#EE99EE;
+    --normal:#AAAA9B;
+    --fighting:#BA5544;
+    --flying:#9899FF;
+    --poison:#AA5599;
+    --ground:#DDBB54;
+    --bug:#A9BB22;
+    --fire:#EB5435;
+    --electric:#FFCC33;
+    --dragon:#6666BA;
+    --dark-gray:#333333;
+    --medium-gray:#828282;
+    --light-gray:#E0E0E0;
+    --background:#FAFAFA;
+    --pokemon-red:#EB5435;
 }

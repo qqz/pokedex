@@ -1,5 +1,6 @@
 import PokedexLogo from './assets/Pokedex_logo.svg';
 import CapturedPokemonsButton from './components/CapturedPokemonsButton';
+import PokemonTiles from './components/PokemonTiles';
 import './App.css';
 import './variables.css';
 
@@ -12,6 +13,7 @@ function App() {
         </div>
         <CapturedPokemonsButton />
       </header>
+      <PokemonTiles />
     </div>
   );
 }
