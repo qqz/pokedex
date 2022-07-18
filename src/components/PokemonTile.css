@@ -1,0 +1,71 @@
+.pokemonTile {
+    border-radius:8px;
+    margin:8px;
+}
+.pokemonPicture {
+    text-align:center;
+}
+.pokemonInfo {
+    background:white;
+    padding:12px;
+}
+.pokemonName {
+    font-weight:bold;
+}
+.pokemonTypes {
+    color: #828282;
+}
+.rock {
+    background: var(--rock);
+}
+.ghost {
+    background: var(--ghost);
+}
+.steel {
+    background: var(--water);
+}
+.water {
+    background: var(--water);
+}
+.grass {
+    background: var(--grass);
+}
+.psychic {
+    background: var(--psychic);
+}
+.ice {
+    background: var(--ice);
+}
+.dark {
+    background: var(--dark);
+}
+.fairy {
+    background: var(--fairy);
+}
+.normal {
+    background: var(--normal);
+}
+.fighting {
+    background: var(--fighting);
+}
+.flying {
+    background: var(--flying);
+}
+.poison {
+    background: var(--poison);
+}
+.ground {
+    background: var(--ground);
+}
+.bug {
+    background: var(--bug);
+}
+.fire {
+    background: var(--fire);
+}
+.electric {
+    background: var(--electric);
+}
+.dragon {
+    background: var(--dragon);
+}
