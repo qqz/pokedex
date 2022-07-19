@@ -2,3 +2,15 @@
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
+.loadMorePokemonButton {
+    background:var(--light-gray);
+    color:var(--dark-gray);
+    padding: 16px;
+    width:95%;
+    margin: 30px;
+    cursor: pointer;
+}
+.loadMorePokemonContainer {
+    display:flex;
+    justify-content:center;
+}

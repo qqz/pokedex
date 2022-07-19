@@ -10,8 +10,6 @@ class PokemonTile extends React.Component {
     }
 
     componentDidMount(){
-  
-        console.log(this.props.props.url);
 
         fetch(this.props.props.url)
         .then(response => response.json())
@@ -23,7 +21,7 @@ class PokemonTile extends React.Component {
                 number: response.id,
                 type: response.types
             });
-            console.log(response);
+
         })
         .catch(err => { console.log(err); 
         });

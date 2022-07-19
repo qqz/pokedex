@@ -9,7 +9,7 @@ class PokemonTiles extends React.Component {
     }
 
     componentDidMount() {
-        fetch("https://pokeapi.co/api/v2/pokemon?limit=20&offset=0")
+        fetch('https://pokeapi.co/api/v2/pokemon?limit=20&offset=0')
         .then(response => response.json())
         .then(response => {
 
@@ -22,15 +22,36 @@ class PokemonTiles extends React.Component {
         });
     }
 
+    loadMorePokemon(){
+        fetch(this.state.nextRequest)
+        .then(response => response.json())
+        .then(response => {
+
+            const morePokemons = this.state.pokemons.concat(response.results);
+
+            this.setState({
+                pokemons: morePokemons,
+                nextRequest: response.next
+            })
+        })
+        .catch(err => { console.log(err); 
+        });
+    }
+
     render(){
         const pokemons = this.state.pokemons;
-        const pokemonItems = this.state.pokemons?.map((pokemon) => 
-            <PokemonTile key={pokemon.name} props={pokemon} />
+        const pokemonItems = this.state.pokemons?.map((pokemon, index) => 
+            <PokemonTile key={pokemon.name + index} props={pokemon} />
         )
 
         return (
-            <div className="pokemonTiles">
-                {pokemonItems}
+            <div className='pokemonTilesContainer'>
+                <div className='pokemonTiles'>
+                    {pokemonItems}
+                </div>
+                <div className='loadMorePokemonContainer'>
+                    <button className='loadMorePokemonButton' onClick={this.loadMorePokemon.bind(this)}>Load More Pokemon</button>
+                </div>
             </div>
         );
     }
